@@ -18,7 +18,7 @@ SDK para Python para NuvemFiscal https://nuvemfiscal.com.br
 
  * Buscar informações de CNPJ:
 ```python
-from nuvemfiscal import NuvemFiscal
+from nuvemfiscal.nuvemfiscal import NuvemFiscal
 
 api = NuvemFiscal()
 resp = api.consulta_cnpj('numero do cnpj')
@@ -27,7 +27,7 @@ print(resp)
 
  * Buscar informações de CEP:
 ```python
-from nuvemfiscal import NuvemFiscal
+from nuvemfiscal.nuvemfiscal import NuvemFiscal
 
 api = NuvemFiscal()
 resp = api.consulta_cep('numero do cep')
