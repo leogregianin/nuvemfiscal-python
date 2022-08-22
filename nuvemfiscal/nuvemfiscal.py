@@ -17,7 +17,7 @@ class NuvemFiscal:
         self.CLIENT_SECRET = os.getenv('CLIENT_SECRET', None)
 
         if not self.CLIENT_ID or not self.CLIENT_SECRET:
-            raise EnvException('Invalid credentials')
+            raise EnvException('CLIENT_ID and/or CLIENT_SECRET not found')
 
         self.url_base = 'https://api.nuvemfiscal.com.br'
         self.url_token = 'https://auth.nuvemfiscal.com.br/oauth/token'

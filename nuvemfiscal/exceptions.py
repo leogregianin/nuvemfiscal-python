@@ -4,4 +4,4 @@ class EnvException(Exception):
         self.message = message
 
     def __str__(self):
-        return f"Error: Invalid credentials"
+        return f"Env file error: {self.message}"
